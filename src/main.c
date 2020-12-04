@@ -121,6 +121,25 @@ int main()
             }
             
         } while (CV != 2);
+        if (jogador == 1)
+        {
+            mat[x][y] = 1;
+        }
+        else
+        {
+            mat[x][y] = 2;
+        }
+        jogos++;
+        jogador++;
+        if (jogador == 3)
+        {
+            jogador = 1;
+        }
+        ganhar = ganhar + linhas(mat);
+        ganhar = ganhar + coluna(mat);
+        ganhar = ganhar + diagonal1(mat);
+        ganhar = ganhar + diagonal2(mat);
+        imprimir(mat);
     }while (ganhar == 0 && jogos < 9);
     
     return 0;
