@@ -3,6 +3,30 @@
 
 #define DIM 3
 
+
+int coordenada(int num)
+{
+    if (num == 1 || num == 2)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int coordenadaCerta(int x, int y)
+{
+    if (x >= 0 && x < DIM)
+    {
+        if (y >= 0 && y < DIM)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
 int posicaVazia(int x, int y,int mat[DIM][DIM])
 {
     if (mat[x][y] != 1 && mat[x][y] != 2)
@@ -79,17 +103,6 @@ int coluna(int mat[DIM][DIM]) {
         cont = 1;
     }
     return 0;
-}
-int coordenada(int num)
-{
-    if (num == 1 || num == 2)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
 }
 int linhas (int mat[DIM][DIM])
 {
