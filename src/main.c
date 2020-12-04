@@ -2,6 +2,31 @@
 #include <stdlib.h>
 
 #define DIM 3
+
+int posicaVazia(int x, int y,int mat[DIM][DIM])
+{
+    if (mat[x][y] != 1 && mat[x][y] != 2)
+    {
+        return 1;
+    }else{
+        printf("\nPosicao Invalida!\nTente novamente!\n");
+        return 0;
+    }
+    
+}
+void imprimir(int mat[DIM][DIM])
+{
+    printf("\nTabuleiro:\n");
+    for (int i = 0; i < DIM; i++)
+    {
+        for (int j = 0; j < DIM; j++)
+        {
+            printf("%d", mat[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n\n");
+}
 int diagonal1(int mat[DIM][DIM])
 {
     int cont = 1;
