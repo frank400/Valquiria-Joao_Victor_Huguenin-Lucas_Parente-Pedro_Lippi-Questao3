@@ -166,6 +166,21 @@ int main()
         ganhar = ganhar + diagonal2(mat);
         imprimir(mat);
     }while (ganhar == 0 && jogos < 9);
-    
+    if (ganhar != 0)
+    {
+        imprimir(mat);
+        if (jogador - 1 == 1)
+        {
+            printf("\nParabens jogador 1 venceu \n");
+        }
+        else
+        {
+            printf("\nParabens jogador 2 venceu\n");
+        }
+    }
+    else
+    {
+        printf("\nQue feio. Ninguem venceu!\n\n");
+    }
     return 0;
 }
