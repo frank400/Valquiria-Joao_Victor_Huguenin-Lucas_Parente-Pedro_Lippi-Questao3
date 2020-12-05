@@ -9,7 +9,7 @@ Para compilar o projeto há duas opções:
 
 1. Compilação pelo gcc/MinGW: abra o seu prompt de comando e execute o seguinte comando 
   ```
-  gcc -std=c99 src/main.c src/ganhaColuna.c src/ganharDiagonal1.c src/ganharDiagonal2.c src/ganharLinhas.c
+  gcc -std=c99 src/main.c src/ganhaColuna.c src/ganharDiagonal1.c src/ganharDiagonal2.c src/ganharLinhas.c -o Valquiria_Joao_Victor_Huguenin_Lucas_Parente_Pedro_Lippi_Questao3
   ```
 2. Utilizando o Cmake: execute a seguinte sequencia de comandos na root do projeto
   - cmake .
