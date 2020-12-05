@@ -1,4 +1,4 @@
-# Questão 3 da lista de exercio em grupo
+# Questão 3 da lista de exercicios em grupo
 
 - Nome do Grupo: Valquiria
 - Integrantes: João Victor Huguenin, Lucas Parente e Pedro Lippi
